@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.rsm-geography {
+    transition: fill 300ms ease;
+}
+
+.rsm-geography:hover {
+    fill: red;
+}
