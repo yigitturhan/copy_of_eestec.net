@@ -127,10 +127,34 @@ nav {
   stroke: var(--background-black);
   stroke-dasharray: 0px;
   stroke-width: 0.1px;
+  cursor: pointer;
+  transform: translateX(140px);
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .rsm-geography:hover {
   fill: red;
+}
+.map-tooltip {
+  position: fixed;
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translate(10px, -50%);
+  max-width: 200px;
+  font-size: 14px;
+}
+.tooltip {
+  pointer-events: none;
 }
 @keyframes scroll {
   0% {
